@@ -289,7 +289,7 @@ class CompletionItemKind(enum.IntEnum):
 
 
 class CompletionItemKindAbstract:
-    def __init__(self, value_set: List['CompletionItemKind']):
+    def __init__(self, value_set: List[CompletionItemKind]):
         self.valueSet = value_set
 
 
@@ -1117,7 +1117,7 @@ class SymbolKind(enum.IntEnum):
 
 
 class SymbolKindAbstract:
-    def __init__(self, value_set: SymbolKind):
+    def __init__(self, value_set: List[SymbolKind]):
         self.valueSet = value_set
 
 
