@@ -84,7 +84,7 @@ class CodeAction:
 
 
 class CodeActionAbstract:
-    def __init(self,
+    def __init__(self,
                dynamic_registration: bool,
                code_action_literal_support:
                'CodeActionLiteralSupportAbstract'):
@@ -628,7 +628,7 @@ class FoldingRange:
 
 
 class FoldingRangeAbstract:
-    def __init(self,
+    def __init__(self,
                dynamic_registration: bool,
                range_limit: NumType,
                line_folding_only: bool):
@@ -844,7 +844,7 @@ class Position:
 
 
 class PublishDiagnosticsAbstract:
-    def __init(self, related_information: bool):
+    def __init__(self, related_information: bool):
         self.relatedInformation = related_information
 
 
@@ -887,7 +887,7 @@ class RegistrationParams:
 
 
 class RenameAbstract:
-    def __init(self, dynamic_registration: bool, prepare_support: bool):
+    def __init__(self, dynamic_registration: bool, prepare_support: bool):
         self.dynamicRegistration = dynamic_registration
         self.prepareSupport = prepare_support
 
@@ -1274,7 +1274,7 @@ class RenameRegistrationOptions(TextDocumentRegistrationOptions):
 
 
 class SignatureHelpRegistrationOptions(TextDocumentRegistrationOptions):
-    def __init(self,
+    def __init__(self,
                document_selector: DocumentSelectorType = None,
                trigger_characters: List[str] = None):
         super().__init__(document_selector)
